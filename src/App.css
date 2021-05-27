@@ -2,6 +2,9 @@
   margin: 0px;
 }
 @media screen and (max-width: 600px) and (min-width: 400px) {
+  .form-inline {
+    flex-wrap: nowrap;
+  }
   .mr-sm-2 {
     width: 80px;
   }
@@ -13,12 +16,21 @@
     font-style: oblique;
     padding: 10px 5px;
     margin: 10px 0;
+    justify-content: center;
   }
   .searchStars {
     margin: auto;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 400px) {
+  .navbar {
+    height: 90px;
+    padding: 10px;
+  }
+  .form-inline {
+    flex-wrap: nowrap;
+  }
   .mr-sm-2 {
     width: 60px;
   }
@@ -30,10 +42,12 @@
   .rStar h2 {
     font-style: oblique;
     padding: 10px 5px;
-    margin: 10px 0;
+    margin: auto;
+    justify-content: center;
   }
   .searchStars {
     margin: auto;
+    justify-content: center;
   }
 }
 .App {

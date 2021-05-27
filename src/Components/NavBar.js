@@ -20,6 +20,8 @@ function NavBar({ setTitleSearch, setMovies, movies }) {
             className=' mr-sm-2'
             onChange={(e) => setTitleSearch(e.target.value)}
           />
+        </Form>
+        <Form inline>
           <AddMovie setMovies={setMovies} movies={movies} />
         </Form>
       </Navbar>
