@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+
+import './App.css'
+import NavBar from './Components/NavBar.js'
+import MovieList from './Components/MovieList.js'
+import { moviesData } from './Components/MovieData.js'
+import SearchByRating from './Components/SearchByRating.js'
 
 function App() {
+  const [rateSearch, setRateSearch] = useState(0)
+  const [titleSearch, setTitleSearch] = useState('')
+  const [movies, setMovies] = useState(moviesData)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <NavBar
+        setTitleSearch={setTitleSearch}
+        setMovies={setMovies}
+        movies={movies}
+      />
+
+      <SearchByRating setRateSearch={setRateSearch} />
+
+      <MovieList
+        movies={movies}
+        titleSearch={titleSearch}
+        rateSearch={rateSearch}
+      />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
