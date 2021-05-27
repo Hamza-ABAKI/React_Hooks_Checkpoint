@@ -25,7 +25,11 @@ const AddMovie = ({ setMovies, movies }) => {
 
   return (
     <>
-      <Button variant='outline-secondary' onClick={handleShow}>
+      <Button
+        className='add-btn'
+        variant='outline-secondary'
+        onClick={handleShow}
+      >
         Add Movie +
       </Button>
 

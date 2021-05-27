@@ -1,6 +1,41 @@
 * {
   margin: 0px;
 }
+@media screen and (max-width: 600px) and (min-width: 400px) {
+  .mr-sm-2 {
+    width: 80px;
+  }
+  .rStar {
+    display: flex;
+    flex-direction: column;
+  }
+  .rStar h2 {
+    font-style: oblique;
+    padding: 10px 5px;
+    margin: 10px 0;
+  }
+  .searchStars {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mr-sm-2 {
+    width: 60px;
+  }
+
+  .rStar {
+    display: flex;
+    flex-direction: column;
+  }
+  .rStar h2 {
+    font-style: oblique;
+    padding: 10px 5px;
+    margin: 10px 0;
+  }
+  .searchStars {
+    margin: auto;
+  }
+}
 .App {
   display: flex;
   flex-direction: column;

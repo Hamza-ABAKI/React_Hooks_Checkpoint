@@ -4,8 +4,13 @@ import ReactStars from 'react-rating-stars-component'
 const SearchByRating = ({ setRateSearch }) => {
   return (
     <div className='rStar'>
-      <h2>Filter Movies by their rating: </h2>
-      <ReactStars size={50} onChange={setRateSearch} />
+      <h2>Filter Movies rating: </h2>
+      <ReactStars
+        classNames='searchStars'
+        size={50}
+        isHalf={false}
+        onChange={setRateSearch}
+      />
     </div>
   )
 }
