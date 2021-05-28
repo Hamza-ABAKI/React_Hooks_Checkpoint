@@ -15,7 +15,6 @@ function MovieList({ movies, titleSearch, rateSearch }) {
                 .includes(titleSearch.toLowerCase().trim()) &&
               movie.rating === rateSearch
           )
-    console.log(tableAfterSearch)
     return tableAfterSearch
   }
 

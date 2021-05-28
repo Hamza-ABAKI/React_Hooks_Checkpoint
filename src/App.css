@@ -72,6 +72,9 @@
   padding: 10px 5px;
   margin: 10px 0;
 }
+.reset-btn {
+  margin: 25px 5px;
+}
 
 .movielist {
   display: flex;
