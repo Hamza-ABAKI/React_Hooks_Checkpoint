@@ -7,11 +7,9 @@ function NavBar({ setTitleSearch, setMovies, movies }) {
   return (
     <div className='navBar'>
       <Navbar className='bg-light justify-content-between'>
-        <Form inline>
-          <img style={{ width: '40px' }} src='./MovieIcon.png' alt='' />
-          <h2 style={{ margin: '3px', padding: '2px', fontFamily: 'fantasy' }}>
-            Movies
-          </h2>
+        <Form inline className='logo'>
+          <img src='./MovieIcon.png' alt='' />
+          <h2>Movies</h2>
         </Form>
         <Form inline>
           <FormControl

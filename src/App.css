@@ -1,18 +1,28 @@
 * {
   margin: 0px;
 }
-@media screen and (max-width: 600px) and (min-width: 400px) {
+@media screen and (max-width: 750px) and (min-width: 400px) {
   .form-inline {
     flex-wrap: nowrap;
   }
+  .logo img {
+    width: 20px;
+  }
+  .logo h2 {
+    margin: 3px;
+    padding: 2px;
+    font-family: fantasy;
+    font-size: 20px;
+  }
   .mr-sm-2 {
-    width: 80px;
+    width: 120px;
   }
   .rStar {
     display: flex;
     flex-direction: column;
   }
   .rStar h2 {
+    font-size: 30px;
     font-style: oblique;
     padding: 10px 5px;
     margin: 10px 0;
@@ -22,17 +32,24 @@
     margin: auto;
     justify-content: center;
   }
+  .reset-btn {
+    padding: 0px 100px;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 400px) {
   .navbar {
     height: 90px;
     padding: 10px;
   }
+  .logo {
+    display: none;
+  }
   .form-inline {
     flex-wrap: nowrap;
   }
   .mr-sm-2 {
-    width: 60px;
+    width: 120px;
   }
 
   .rStar {
@@ -49,6 +66,10 @@
     margin: auto;
     justify-content: center;
   }
+  .reset-btn {
+    padding: 0px 100px;
+    justify-content: center;
+  }
 }
 .App {
   display: flex;
@@ -62,6 +83,14 @@
   margin: 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.logo img {
+  width: 40px;
+}
+.logo h2 {
+  margin: 3px;
+  padding: 2px;
+  font-family: fantasy;
+}
 .rStar {
   margin: 80px auto 20px;
   display: flex;
@@ -72,6 +101,10 @@
   padding: 10px 5px;
   margin: 10px 0;
 }
+.searchStars {
+  margin: auto 5px;
+}
+
 .reset-btn {
   margin: 25px 5px;
 }

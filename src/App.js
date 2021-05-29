@@ -19,7 +19,7 @@ function App() {
         movies={movies}
       />
 
-      <SearchByRating setRateSearch={setRateSearch} />
+      <SearchByRating setRateSearch={setRateSearch} rateSearch={rateSearch} />
 
       <MovieList
         movies={movies}
